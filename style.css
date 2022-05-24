@@ -1,12 +1,120 @@
-*{
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #12a899;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+body {
+  font-family: "Montserrat";
+  font-size: 20px;
+  background-color: rgba(229, 137, 224, 1);
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+}
+.container2{
+  background-color: rgba(160, 207, 228, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  border:1px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 20px 0px #0000001c;
+}
+.container2:hover{
+  box-shadow: 7px 7px 7px 15px white;
+}
+.container3{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+.container4{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.container h2 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+.container h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.container h4 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+
+.arrow {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding: 0 100px !important;
+  border: none;
+}
+.arrow img {
+  height: 80px;
+}
+
+
+.keyCode {
+  cursor:default;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(160, 207, 228, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay.hide {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .container {
+  flex-direction: column;
+  }
+
+
+  .arrow {
+  padding: 30px 0 !important;
+  transform: rotate(90deg);
+  }
 }
